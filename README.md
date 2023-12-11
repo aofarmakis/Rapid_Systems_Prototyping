@@ -1,4 +1,4 @@
-# Rapid_Systems_Prototyping
+# Rapid Systems Prototyping
 
 This repository contains all related material I created for my presentations on "Rapid Prototyping of Digital Systems" for the University of Patras' ACM Student branch.
 It contains:
@@ -8,4 +8,4 @@ It contains:
 
 Testbenches may be added in the future, but currently they are not of high priority
 
-Language: Greek (presentations, lab problems) & English (code comments, signal declarations)
+Languages: Greek (presentations, lab problems) & English (code comments, signal declarations)
