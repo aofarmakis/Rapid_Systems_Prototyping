@@ -7,4 +7,5 @@ It contains:
 - Verilog code of both the presentation circuits as well as the solutions to the problems
 
 Testbenches may be added in the future, but currently they are not of high priority
+
 Language: Greek (presentations, lab problems) & English (code comments, signal declarations)
