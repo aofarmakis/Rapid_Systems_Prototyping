@@ -6,6 +6,7 @@ module ALU (A, B, opcode, ALU_Result, flags);
      output [1:0] flags;
      output [N-1:0] ALU_Result;
 
+     wire [N-1:0] absolute;
      wire carry, zero;
 
      // --------------------------------------------------- //
