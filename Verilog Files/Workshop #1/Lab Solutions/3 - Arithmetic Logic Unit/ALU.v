@@ -37,8 +37,8 @@ module ALU (A, B, opcode, ALU_Result, flags);
      endfunction
 
      // Clear definition of absolute value. You can do
-     // tenary operations within tenary operations, but
-     // I want to avoid any possible confusion here.
+     // ternary operations within ternary operations,
+     // but I want to avoid any possible confusion here.
      assign absolute = (B[N-1] == 1'b1) ? -$signed(B) : B;
 
      assign {carry, ALU_Result} = (opcode == 3’d0) ? $signed(A) + $signed(B) :
@@ -49,7 +49,7 @@ module ALU (A, B, opcode, ALU_Result, flags);
                                   (opcode == 3’d5) ? A >> B[$clog2(N)-1:0] | A << (N-B[$clog2(N)-1:0]) :
                                   (opcode == 3’d6) ? ONES(A) + ONES(B) : absolute;
 
-     assign zero = (y == 0);
+     assign zero = (ALU_Result == 0);
      assign flags = {carry, zero};
 
 endmodule
